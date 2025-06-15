@@ -362,7 +362,10 @@ def main_body():
         #cleanfilenames = glob.glob(os.path.join(clean_dir, params['audioformat']))
         cleanfilenames= []
         for path in Path(clean_dir).rglob('*.wav'):
-            cleanfilenames.append(str(path.resolve()))
+            path_str = str(path.resolve())
+            # Exclude german_speech and read_speech directories
+            if 'german_speech' not in path_str and 'read_speech' not in path_str:
+                cleanfilenames.append(path_str)
 
     shuffle(cleanfilenames)
 #   add singing voice to clean speech
