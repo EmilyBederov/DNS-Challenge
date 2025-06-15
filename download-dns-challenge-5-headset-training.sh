@@ -40,55 +40,11 @@ BLOB_NAMES=(
     Track1_Headset/french_speech.tar.gz.partae
     Track1_Headset/french_speech.tar.gz.partah
 
-    Track1_Headset/german_speech.tgz.partaa
-    Track1_Headset/german_speech.tgz.partab
-    Track1_Headset/german_speech.tgz.partac
-    Track1_Headset/german_speech.tgz.partad
-    Track1_Headset/german_speech.tgz.partae
-    Track1_Headset/german_speech.tgz.partaf
-    Track1_Headset/german_speech.tgz.partag
-    Track1_Headset/german_speech.tgz.partah
-    Track1_Headset/german_speech.tgz.partaj
-    Track1_Headset/german_speech.tgz.partal
-    Track1_Headset/german_speech.tgz.partam
-    Track1_Headset/german_speech.tgz.partan
-    Track1_Headset/german_speech.tgz.partao
-    Track1_Headset/german_speech.tgz.partap
-    Track1_Headset/german_speech.tgz.partaq
-    Track1_Headset/german_speech.tgz.partar
-    Track1_Headset/german_speech.tgz.partas
-    Track1_Headset/german_speech.tgz.partat
-    Track1_Headset/german_speech.tgz.partau
-    Track1_Headset/german_speech.tgz.partav
-    Track1_Headset/german_speech.tgz.partaw
-
     Track1_Headset/italian_speech.tgz.partaa
     Track1_Headset/italian_speech.tgz.partab
     Track1_Headset/italian_speech.tgz.partac
     Track1_Headset/italian_speech.tgz.partad
     
-    Track1_Headset/read_speech.tgz.partaa
-    Track1_Headset/read_speech.tgz.partab
-    Track1_Headset/read_speech.tgz.partac
-    Track1_Headset/read_speech.tgz.partad
-    Track1_Headset/read_speech.tgz.partae
-    Track1_Headset/read_speech.tgz.partaf
-    Track1_Headset/read_speech.tgz.partag
-    Track1_Headset/read_speech.tgz.partah
-    Track1_Headset/read_speech.tgz.partai
-    Track1_Headset/read_speech.tgz.partaj
-    Track1_Headset/read_speech.tgz.partak
-    Track1_Headset/read_speech.tgz.partal
-    Track1_Headset/read_speech.tgz.partam
-    Track1_Headset/read_speech.tgz.partan
-    Track1_Headset/read_speech.tgz.partao
-    Track1_Headset/read_speech.tgz.partap
-    Track1_Headset/read_speech.tgz.partaq
-    Track1_Headset/read_speech.tgz.partar
-    Track1_Headset/read_speech.tgz.partas
-    Track1_Headset/read_speech.tgz.partat
-    Track1_Headset/read_speech.tgz.partau
-
     Track1_Headset/russian_speech.tgz
 
     Track1_Headset/spanish_speech.tgz.partaa
@@ -120,10 +76,10 @@ do
 
     # DRY RUN: print HTTP response and Content-Length
     # WITHOUT downloading the files
-    curl -s -I "$URL" | head -n 2
+    #curl -s -I "$URL" | head -n 2
 
     # Actually download the files: UNCOMMENT when ready to download
-    # curl "$URL" -o "$OUTPUT_PATH/$BLOB"
+    curl "$URL" -o "$OUTPUT_PATH/$BLOB"
 
     # Same as above, but using wget
     # wget "$URL" -O "$OUTPUT_PATH/$BLOB"
