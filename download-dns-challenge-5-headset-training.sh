@@ -69,21 +69,35 @@ OUTPUT_PATH="./datasets_fullband"
 
 mkdir -p $OUTPUT_PATH/{clean_fullband}
 
+# for BLOB in ${BLOB_NAMES[@]}
+# do
+#     URL="$AZURE_URL/$BLOB"
+#     echo "Download: $BLOB"
+
+#     # DRY RUN: print HTTP response and Content-Length
+#     # WITHOUT downloading the files
+#     #curl -s -I "$URL" | head -n 2
+
+#     # Actually download the files: UNCOMMENT when ready to download
+#     curl "$URL" -o "$OUTPUT_PATH/$BLOB"
+
+#     # Same as above, but using wget
+#     # wget "$URL" -O "$OUTPUT_PATH/$BLOB"
+
+#     # Same, + unpack files on the fly
+#     # curl "$URL" | tar -C "$OUTPUT_PATH" -f - -x -j
+# done
 for BLOB in ${BLOB_NAMES[@]}
 do
     URL="$AZURE_URL/$BLOB"
+    FILE_PATH="$OUTPUT_PATH/$BLOB"
+    
+    # Check if file already exists
+    if [ -f "$FILE_PATH" ]; then
+        echo "File already exists, skipping: $BLOB"
+        continue
+    fi
+    
     echo "Download: $BLOB"
-
-    # DRY RUN: print HTTP response and Content-Length
-    # WITHOUT downloading the files
-    #curl -s -I "$URL" | head -n 2
-
-    # Actually download the files: UNCOMMENT when ready to download
-    curl "$URL" -o "$OUTPUT_PATH/$BLOB"
-
-    # Same as above, but using wget
-    # wget "$URL" -O "$OUTPUT_PATH/$BLOB"
-
-    # Same, + unpack files on the fly
-    # curl "$URL" | tar -C "$OUTPUT_PATH" -f - -x -j
+    curl "$URL" -o "$FILE_PATH"
 done
