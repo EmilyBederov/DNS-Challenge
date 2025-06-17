@@ -29,9 +29,10 @@ BLOB_NAMES=(
 
 AZURE_URL="https://dnschallengepublic.blob.core.windows.net/dns5archive/V5_training_dataset"
 
-OUTPUT_PATH="./"
+OUTPUT_PATH="./datasets_fullband"
 
-mkdir -p $OUTPUT_PATH/{noise_fullband}
+mkdir -p $OUTPUT_PATH/noise_fullband
+mkdir -p $OUTPUT_PATH/impulse_responses
 
 for BLOB in ${BLOB_NAMES[@]}
 do
