@@ -40,10 +40,10 @@ do
 
     # DRY RUN: print HTTP response and Content-Length
     # WITHOUT downloading the files
-    curl -s -I "$URL" | head -n 2
+    #curl -s -I "$URL" | head -n 2
 
     # Actually download the files: UNCOMMENT when ready to download
-    # curl "$URL" -o "$OUTPUT_PATH/$BLOB"
+    curl "$URL" -o "$OUTPUT_PATH/$BLOB"
 
     # Same as above, but using wget
     # wget "$URL" -O "$OUTPUT_PATH/$BLOB"
