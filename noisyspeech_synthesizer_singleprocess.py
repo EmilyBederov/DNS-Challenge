@@ -214,11 +214,7 @@ def main_gen(params):
                                                                   clean=clean, 
                                                                   noise=noise, 
                                                                   snr=snr)
-        # Uncomment the below lines if you need segmental SNR and comment the above lines using snr_mixer
-        #clean_snr, noise_snr, noisy_snr, target_level = segmental_snr_mixer(params=params, 
-        #                                                         clean=clean, 
-        #                                                          noise=noise, 
-        #                                                         snr=snr)
+        
         # unexpected clipping
         if is_clipped(clean_snr) or is_clipped(noise_snr) or is_clipped(noisy_snr):
             print("Warning: File #" + str(file_num) + " has unexpected clipping, " + \
