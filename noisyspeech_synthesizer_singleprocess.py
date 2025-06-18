@@ -172,13 +172,6 @@ def main_gen(params):
             gen_audio(True, params, clean_index)
 
         # add reverb with selected RIR
-        print(f"=== RIR DEBUG ===")
-        print(f"rir_list_csv path: {params.get('rir_list_csv', 'NOT FOUND')}")
-        print(f"File exists: {os.path.exists(params.get('rir_list_csv', ''))}")
-        print(f"myrir type: {type(params.get('myrir', 'NOT FOUND'))}")
-        print(f"myrir length: {len(params.get('myrir', []))}")
-        print(f"myrir contents: {params.get('myrir', [])[:5]}")  # First 5 items
-        print(f"=== END DEBUG ===")
         rir_index = random.randint(0,len(params['myrir'])-1)
         
         my_rir = os.path.normpath(params['myrir'][rir_index])
