@@ -325,7 +325,7 @@ def main_body():
     params['lower_t60'] = float(cfg['lower_t60'])
     params['upper_t60'] = float(cfg['upper_t60'])
     params['rir_table_csv'] = str(cfg['rir_table_csv'])
-    params['clean_speech_t60_csv'] = str(cfg['clean_speech_t60_csv'])
+    #params['clean_speech_t60_csv'] = str(cfg['clean_speech_t60_csv'])
 
     if cfg['fileindex_start'] != 'None' and cfg['fileindex_end'] != 'None':
         params['num_files'] = int(cfg['fileindex_end'])-int(cfg['fileindex_start'])
