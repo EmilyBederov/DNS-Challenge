@@ -173,8 +173,8 @@ def main_gen(params):
 
         # add reverb with selected RIR
         print(f"=== RIR DEBUG ===")
-        print(f"rir_table_csv path: {params.get('rir_table_csv', 'NOT FOUND')}")
-        print(f"File exists: {os.path.exists(params.get('rir_table_csv', ''))}")
+        print(f"rir_list_csv path: {params.get('rir_list_csv', 'NOT FOUND')}")
+        print(f"File exists: {os.path.exists(params.get('rir_list_csv', ''))}")
         print(f"myrir type: {type(params.get('myrir', 'NOT FOUND'))}")
         print(f"myrir length: {len(params.get('myrir', []))}")
         print(f"myrir contents: {params.get('myrir', [])[:5]}")  # First 5 items
@@ -329,7 +329,7 @@ def main_body():
     params['rir_choice'] = int(cfg['rir_choice'])
     params['lower_t60'] = float(cfg['lower_t60'])
     params['upper_t60'] = float(cfg['upper_t60'])
-    params['rir_list_csv'] = str(cfg['rir_table_csv'])
+    params['rir_list_csv'] = str(cfg['rir_list_csv'])
     #params['clean_speech_t60_csv'] = str(cfg['clean_speech_t60_csv'])
 
     if cfg['fileindex_start'] != 'None' and cfg['fileindex_end'] != 'None':
@@ -447,7 +447,7 @@ def main_body():
         params['noisedirs'] = noisedirs
 
     # rir 
-    temp = pd.read_csv(params['rir_table_csv'], skiprows=[1], sep=',', header=None,  names=['wavfile','channel','T60_WB','C50_WB','isRealRIR'])
+    temp = pd.read_csv(params['rir_list_csv'], skiprows=[1], sep=',', header=None,  names=['wavfile','channel','T60_WB','C50_WB','isRealRIR'])
     temp.keys()
     #temp.wavfile
 
