@@ -31,7 +31,7 @@
 BLOB_NAMES=(
 
     # Track1_Headset/VocalSet_48kHz_mono.tgz
-    # Track1_Headset/emotional_speech.tgz
+    Track1_Headset/emotional_speech.tgz
 
     # Track1_Headset/french_speech.tar.gz.partaa
     # Track1_Headset/french_speech.tar.gz.partab
@@ -58,10 +58,6 @@ BLOB_NAMES=(
     # Track1_Headset/vctk_wav48_silence_trimmed.tgz.partaa
     # Track1_Headset/vctk_wav48_silence_trimmed.tgz.partab
     # Track1_Headset/vctk_wav48_silence_trimmed.tgz.partac
-
-    Track1_Headset/read_speech.tgz.partaa
-    Track1_Headset/read_speech.tgz.partab
-    Track1_Headset/read_speech.tgz.partac
 )
 
 ###############################################################
