@@ -30,34 +30,38 @@
 
 BLOB_NAMES=(
 
-    Track1_Headset/VocalSet_48kHz_mono.tgz
-    Track1_Headset/emotional_speech.tgz
+    # Track1_Headset/VocalSet_48kHz_mono.tgz
+    # Track1_Headset/emotional_speech.tgz
 
-    Track1_Headset/french_speech.tar.gz.partaa
-    Track1_Headset/french_speech.tar.gz.partab
-    Track1_Headset/french_speech.tar.gz.partac
-    Track1_Headset/french_speech.tar.gz.partad
-    Track1_Headset/french_speech.tar.gz.partae
-    Track1_Headset/french_speech.tar.gz.partah
+    # Track1_Headset/french_speech.tar.gz.partaa
+    # Track1_Headset/french_speech.tar.gz.partab
+    # Track1_Headset/french_speech.tar.gz.partac
+    # Track1_Headset/french_speech.tar.gz.partad
+    # Track1_Headset/french_speech.tar.gz.partae
+    # Track1_Headset/french_speech.tar.gz.partah
 
-    Track1_Headset/italian_speech.tgz.partaa
-    Track1_Headset/italian_speech.tgz.partab
-    Track1_Headset/italian_speech.tgz.partac
-    Track1_Headset/italian_speech.tgz.partad
+    # Track1_Headset/italian_speech.tgz.partaa
+    # Track1_Headset/italian_speech.tgz.partab
+    # Track1_Headset/italian_speech.tgz.partac
+    # Track1_Headset/italian_speech.tgz.partad
     
-    Track1_Headset/russian_speech.tgz
+    # Track1_Headset/russian_speech.tgz
 
-    Track1_Headset/spanish_speech.tgz.partaa
-    Track1_Headset/spanish_speech.tgz.partab
-    Track1_Headset/spanish_speech.tgz.partac
-    Track1_Headset/spanish_speech.tgz.partad
-    Track1_Headset/spanish_speech.tgz.partae
-    Track1_Headset/spanish_speech.tgz.partaf
-    Track1_Headset/spanish_speech.tgz.partag
+    # Track1_Headset/spanish_speech.tgz.partaa
+    # Track1_Headset/spanish_speech.tgz.partab
+    # Track1_Headset/spanish_speech.tgz.partac
+    # Track1_Headset/spanish_speech.tgz.partad
+    # Track1_Headset/spanish_speech.tgz.partae
+    # Track1_Headset/spanish_speech.tgz.partaf
+    # Track1_Headset/spanish_speech.tgz.partag
 
-    Track1_Headset/vctk_wav48_silence_trimmed.tgz.partaa
-    Track1_Headset/vctk_wav48_silence_trimmed.tgz.partab
-    Track1_Headset/vctk_wav48_silence_trimmed.tgz.partac
+    # Track1_Headset/vctk_wav48_silence_trimmed.tgz.partaa
+    # Track1_Headset/vctk_wav48_silence_trimmed.tgz.partab
+    # Track1_Headset/vctk_wav48_silence_trimmed.tgz.partac
+
+    Track1_Headset/read_speech.tgz.partaa
+    Track1_Headset/read_speech.tgz.partab
+    Track1_Headset/read_speech.tgz.partac
 )
 
 ###############################################################
